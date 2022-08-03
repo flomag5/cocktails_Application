@@ -25,7 +25,7 @@ router.get('', cocktailCtrl.getAllCocktails)
 
 router.get('/:id', cocktailCtrl.getCocktail)
 
-router.put('', checkToken, cocktailCtrl.addCocktail)
+router.put('', cocktailCtrl.addCocktail)
 
 router.patch('/:id', checkToken, cocktailCtrl.updateCocktail)
 
